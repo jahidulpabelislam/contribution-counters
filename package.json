@@ -2,20 +2,20 @@
     "name": "counters",
     "version": "1.0.0",
     "description": "Repos & commits counter",
-    "main": "index.js",
-    "directories": {
-        "lib": "lib"
+    "homepage": "https://github.com/jahidulpabelislam/counters.js#readme",
+    "bugs": {
+        "url": "https://github.com/jahidulpabelislam/counters.js/issues"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/jahidulpabelislam/counters.js.git"
     },
-    "author": "Jahidul Pabel Islam <me@jahidulpabelislam.com>",
     "license": "GPL-3.0",
-    "bugs": {
-        "url": "https://github.com/jahidulpabelislam/counters.js/issues"
+    "author": "Jahidul Pabel Islam <me@jahidulpabelislam.com>",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
     },
-    "homepage": "https://github.com/jahidulpabelislam/counters.js#readme",
     "dependencies": {
         "axios": "^0.18.0"
     }
