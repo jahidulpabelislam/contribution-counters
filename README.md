@@ -1,6 +1,6 @@
-# counters
+# Contribution Counters
 
-[![CodeFactor](https://www.codefactor.io/repository/github/jahidulpabelislam/counters/badge?style=flat-square)](https://www.codefactor.io/repository/github/jahidulpabelislam/counters)
+[![CodeFactor](https://www.codefactor.io/repository/github/jahidulpabelislam/contribution-counters/badge?style=flat-square)](https://www.codefactor.io/repository/github/jahidulpabelislam/contribution-counters)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b6f7e38aec0c4a8999cd763f73e55a45)](https://app.codacy.com/app/jahidulpabelislam/counters.js?utm_source=github.com&utm_medium=referral&utm_content=jahidulpabelislam/counters.js&utm_campaign=Badge_Grade_Settings)
 
 A Node module to get the total commit's and repo's a user has contributed to.
@@ -11,7 +11,7 @@ This contribution counter is for 3 VCS's: GitHub, Bitbucket &amp; GitLab.
 
 1. Import the necessary counter like so: 
 
-    `const { GitHub } = require("counters");`
+    `const { GitHub } = require("contribution-counters");`
 
 2. Set up configuration for the selected counter
 
