@@ -1,14 +1,14 @@
 {
-    "name": "counters",
+    "name": "contribution-counters",
     "version": "1.0.0",
-    "description": "Repos & commits counter",
-    "homepage": "https://github.com/jahidulpabelislam/counters.js#readme",
+    "description": "Repos & commits counters",
+    "homepage": "https://github.com/jahidulpabelislam/contribution-counters#readme",
     "bugs": {
-        "url": "https://github.com/jahidulpabelislam/counters.js/issues"
+        "url": "https://github.com/jahidulpabelislam/contribution-counters/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/jahidulpabelislam/counters.js.git"
+        "url": "git+https://github.com/jahidulpabelislam/contribution-counters.git"
     },
     "license": "GPL-3.0",
     "author": "Jahidul Pabel Islam <me@jahidulpabelislam.com>",
