@@ -35,7 +35,10 @@ This contribution counter is for 3 VCS's: GitHub, Bitbucket &amp; GitLab.
     const counters = await api.getCounters();
     ``` 
 
-4. The returned value (`counters`) will have two properties `commits` which is your total commits, and `projects` is the number of project's you've contributed to.
+4. The returned value (`counters`) will have two properties:
+
+   1. `commits` which is your total commits
+   2. `projects` is the number of project's you've contributed to.
 
 
 `GitHub` in above examples can be replace with `Bitbucket` and `GitLab`.
