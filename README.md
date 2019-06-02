@@ -7,6 +7,12 @@ A Node module to get the total commit's and repo's a user has contributed to.
  
 This contribution counter is for 3 VCS's: GitHub, Bitbucket &amp; GitLab.
 
+## Install
+
+1. Locally `npm install contribution-counters@1.0.0 --save`
+
+2. Globally `npm install contribution-counters@1.0.0 --global`
+
 ## Using module
 
 1. Import the necessary counter like so: 
