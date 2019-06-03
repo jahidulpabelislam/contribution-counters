@@ -3,25 +3,28 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/jahidulpabelislam/contribution-counters/badge?style=flat-square)](https://www.codefactor.io/repository/github/jahidulpabelislam/contribution-counters)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b6f7e38aec0c4a8999cd763f73e55a45)](https://app.codacy.com/app/jahidulpabelislam/counters.js?utm_source=github.com&utm_medium=referral&utm_content=jahidulpabelislam/counters.js&utm_campaign=Badge_Grade_Settings)
 
-A Node module to get the total commit's and repo's a user has contributed to.
+Have you ever wanted to find out how many repos/projects you've contributed to and with how many commits?
+Well, now you can easily do so with this simple to use module!
  
-This contribution counter is for 3 VCS's: GitHub, Bitbucket &amp; GitLab.
+This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is achieved via each of their API's and access tokens.
 
-## Install
+## Instructions 
 
-1. Locally `npm install contribution-counters@1.0.0 --save`
+### Install
 
-2. Globally `npm install contribution-counters@1.0.0 --global`
+1. Locally: `npm install contribution-counters@1.0.0 --save`
 
-## Using module
+2. Globally: `npm install contribution-counters@1.0.0 --global`
+
+### Using module
 
 1. Import the necessary counter like so: 
 
     `const { GitHub } = require("contribution-counters");`
 
-2. Set up configuration for the selected counter
+2. Set up a configuration for the selected counter
 
-    The configuration for all is an object with the following properties (all available on all API's):
+    The configuration for all is an object with the following properties (all available on all APIs):
 
     * `username`: Your username (string:required)
     * `accessToken`: A access token for the user used above (string:required)
@@ -30,8 +33,8 @@ This contribution counter is for 3 VCS's: GitHub, Bitbucket &amp; GitLab.
     * `userEmailAddresses`: An array of your email addresses which may be associated with a commit (array)
     * `userNames`: An array of your name's which may be associated with a commit (array)
 
-    If you only want to get repos or commits after a particular date (Also can be used to minimise API requests if you know you haven't contributed to any repo's before this date)
-    * `fromDate`: A datetime string used to only return repos and/or commit's after this date  (ISO-8601 Date/timestamp (YYYY-MM-DDTHH:mm:ss.sssZ))
+    If you only want to get repos or commits after a particular date (Also can be used to minimise API requests if you know you haven't contributed to any repos before this date)
+    * `fromDate`: A datetime string used to only return repos and/or commits after this date (ISO-8601 Date/timestamp (YYYY-MM-DDTHH:mm:ss.sssZ))
 
 3. Start the counter with the following:
 
@@ -43,11 +46,10 @@ This contribution counter is for 3 VCS's: GitHub, Bitbucket &amp; GitLab.
 
 4. The returned value (`counters`) will have two properties:
 
-   1. `commits` which is your total commits
-   2. `projects` is the number of project's you've contributed to.
+   * `commits` which is your total commits
+   * `projects` is the number of projects you've contributed to.
 
-
-`GitHub` in above examples can be replace with `Bitbucket` and `GitLab`.
+`GitHub` in the above example can be replaced with `Bitbucket` and `GitLab`.
 
 ### Creating access tokens
 
