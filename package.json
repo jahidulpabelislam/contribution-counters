@@ -2,6 +2,16 @@
     "name": "contribution-counters",
     "version": "1.0.0",
     "description": "Repos & commits counters",
+    "keywords": [
+        "counter",
+        "contribution",
+        "commits",
+        "repos",
+        "api",
+        "github",
+        "bitbucket",
+        "gitlab"
+    ],
     "homepage": "https://github.com/jahidulpabelislam/contribution-counters#readme",
     "bugs": {
         "url": "https://github.com/jahidulpabelislam/contribution-counters/issues"
