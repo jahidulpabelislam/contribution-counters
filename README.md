@@ -10,20 +10,20 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 
 ## Instructions
 
-### Install
+### Installing
 
-1.  Locally: `npm install contribution-counters@1.0.0 --save`
-2.  Globally: `npm install contribution-counters@1.0.0 --global`
+1.  To install locally: `npm install contribution-counters@1.0.0 --save`
+2.  To install globally: `npm install contribution-counters@1.0.0 --global`
 
 ### Using module
 
-1.  Import the necessary counter like so:
+1.  Import the necessary counter like below:
 
     `const { GitHub } = require("contribution-counters");`
 
-2.  Set up a configuration for the selected counter
+2.  Set up the configuration for the selected counter
 
-    The configuration for all is an object with the following properties (all available on all APIs):
+    The config is an object with the following properties (all available on all counters):
 
     -   `username`: Your username (string:required)
     -   `accessToken`: A access token for the user used above (string:required)
@@ -45,12 +45,12 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
     const counters = await api.getCounters();
     ```
 
-4.  The returned value (`counters`) will have two properties:
+4.  The returned result (`counters`) is a object with two properties:
 
-    -   `commits` which is your total commits
-    -   `projects` is the number of projects you've contributed to.
+    -   `commits` is your total commits
+    -   `projects` is the number of projects you've contributed to
 
-`GitHub` in the above example can be replaced with `Bitbucket` and `GitLab`.
+`GitHub` in the above example can be replaced with `Bitbucket` or `GitLab`.
 
 ### Creating access tokens
 
