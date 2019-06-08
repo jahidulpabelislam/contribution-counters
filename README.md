@@ -80,4 +80,4 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 
 ## License
 
-This module is licensed under the General Public License - see the [License](LICENSE) file for details
+This module is licensed under the General Public License - see the [License](LICENSE.md) file for details
