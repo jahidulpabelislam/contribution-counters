@@ -41,6 +41,11 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 
     -   `minRepoAccessLevel`: An enum value used to only get repos with this access level or greater, see [here](https://docs.gitlab.com/ee/api/members.html) (int:default=30)[10, 20, 30, 40,50]
 
+    Only for Bitbucket
+
+    -   `repoRole`: An enum value used to only get repos with this role level or greater, see [here](https://developer.atlassian.com/bitbucket/api/2/reference/resource/repositories/%7Busername%7D) (string:default=contributor)[admin, contributor, member, owner]
+
+
 3.  Start the counter with the following:
 
     ```javascript
