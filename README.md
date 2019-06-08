@@ -12,8 +12,8 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 
 ### Installing
 
-1.  To install locally: `npm install contribution-counters@1.0.0 --save`
-2.  To install globally: `npm install contribution-counters@1.0.0 --global`
+1.  To install locally: `npm install contribution-counters --save`
+2.  To install globally: `npm install contribution-counters --global`
 
 ### Using module
 
