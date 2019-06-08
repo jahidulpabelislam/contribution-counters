@@ -1,5 +1,7 @@
 # Contribution Counters
 
+[![NPM](https://nodei.co/npm/contribution-counters.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.org/package/contribution-counters)
+
 [![npm version](https://badge.fury.io/js/contribution-counters.svg)](//npmjs.com/package/contribution-counters/)
 [![CodeFactor](https://www.codefactor.io/repository/github/jahidulpabelislam/contribution-counters/badge?style=flat-square)](https://www.codefactor.io/repository/github/jahidulpabelislam/contribution-counters)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b6f7e38aec0c4a8999cd763f73e55a45)](https://app.codacy.com/app/jahidulpabelislam/counters.js?utm_source=github.com&utm_medium=referral&utm_content=jahidulpabelislam/counters.js&utm_campaign=Badge_Grade_Settings)
