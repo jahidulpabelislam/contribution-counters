@@ -1,3 +1,7 @@
+;/*
+ * Just an example of all the counters in action.
+ */
+
 "use strict";
 
 const { Bitbucket, GitHub, GitLab } = require("contribution-counters");
