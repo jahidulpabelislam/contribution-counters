@@ -73,6 +73,11 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 -   [GitLab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html#creating-a-personal-access-token)
 -   [Bitbucket](https://confluence.atlassian.com/bitbucketserver/personal-access-tokens-939515499.html)
 
+## Support
+
+If you found this module interesting or useful please do spread the word of this module: share on your social's, star on github, etc.
+
+If you find any issues or have any feature requests, you can open a [issue](https://github.com/jahidulpabelislam/contribution-counters/issues) or can email me @ me@jahidulpabelislam.com.
 
 ## Authors
 
