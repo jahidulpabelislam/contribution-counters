@@ -1,5 +1,6 @@
 # Contribution Counters
 
+[![npm version](https://badge.fury.io/js/contribution-counters.svg)](//npmjs.com/package/contribution-counters/)
 [![CodeFactor](https://www.codefactor.io/repository/github/jahidulpabelislam/contribution-counters/badge?style=flat-square)](https://www.codefactor.io/repository/github/jahidulpabelislam/contribution-counters)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b6f7e38aec0c4a8999cd763f73e55a45)](https://app.codacy.com/app/jahidulpabelislam/counters.js?utm_source=github.com&utm_medium=referral&utm_content=jahidulpabelislam/counters.js&utm_campaign=Badge_Grade_Settings)
 
@@ -44,7 +45,6 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
     Only for Bitbucket
 
     -   `repoRole`: An enum value used to only get repos with this role level or greater, see [here](https://developer.atlassian.com/bitbucket/api/2/reference/resource/repositories/%7Busername%7D) (string:default=contributor)[admin, contributor, member, owner]
-
 
 3.  Start the counter with the following:
 
