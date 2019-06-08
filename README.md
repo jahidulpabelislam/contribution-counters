@@ -23,7 +23,7 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 
 2.  Set up the configuration for the selected counter
 
-    The config is an object with the following properties (all available on all counters):
+    The config is an object with the following properties (all available on all counters unless specified):
 
     -   `username`: Your username (string:required)
     -   `accessToken`: A access token for the user used above (string:required)
@@ -36,6 +36,10 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
     If you only want to get repos or commits after a particular date (Also can be used to minimise API requests if you know you haven't contributed to any repos before this date)
 
     -   `fromDate`: A datetime string used to only return repos and/or commits after this date (ISO-8601 Date/timestamp (YYYY-MM-DDTHH:mm:ss.sssZ))
+
+    Only for GitLab
+
+    -   `minRepoAccessLevel`: An enum value used to only get repos with this access level or greater, see [here](https://docs.gitlab.com/ee/api/members.html) (int:default=30)[10, 20, 30, 40,50]
 
 3.  Start the counter with the following:
 
