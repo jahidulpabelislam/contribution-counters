@@ -1,4 +1,4 @@
-;/*
+;/**
  * Just an example of all the counters in action.
  */
 
