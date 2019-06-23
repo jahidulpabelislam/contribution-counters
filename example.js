@@ -41,12 +41,12 @@ const getAPICounter = async function(apiClass, extraConfig = {}) {
 };
 
 const getCounters = async function() {
-    await getAPICounter(GitHub, {
+    await getAPICounter(Bitbucket, {
         accessToken: "hidden",
         fromDate: "2019-06-02",
     });
 
-    await getAPICounter(Bitbucket, {
+    await getAPICounter(GitHub, {
         accessToken: "hidden",
         fromDate: "2019-06-02",
     });
