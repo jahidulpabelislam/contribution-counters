@@ -21,7 +21,6 @@ let totalProjects = 0;
 
 // A generic function as all 3 counters will do the same functions
 const getAPICounter = async function(apiClass, extraConfig = {}) {
-
     const allConfig = {
         username: username,
         userEmailAddresses: userEmailAddresses,
@@ -33,7 +32,7 @@ const getAPICounter = async function(apiClass, extraConfig = {}) {
 
     const counters = await api.getCounters();
 
-    console.log(`${api.constructor.name}:`, counters);
+    api.log(counters);
 
     // Here just update the total counts
     totalCommits += counters.commits;
