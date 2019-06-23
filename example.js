@@ -27,11 +27,8 @@ const getAPICounter = async function(apiClass, extraConfig = {}) {
         userNames: userNames,
         ...extraConfig,
     };
-
     const api = new apiClass(allConfig);
-
     const counters = await api.getCounters();
-
     api.log(counters);
 
     // Here just update the total counts
