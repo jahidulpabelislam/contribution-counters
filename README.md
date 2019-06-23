@@ -77,11 +77,11 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 
 If you found this module interesting or useful please do spread the word of this module: share on your social's, star on github, etc.
 
-If you find any issues or have any feature requests, you can open a [issue](https://github.com/jahidulpabelislam/contribution-counters/issues) or can email me @ me@jahidulpabelislam.com.
+If you find any issues or have any feature requests, you can open a [issue](https://github.com/jahidulpabelislam/contribution-counters/issues) or can email [me @ jahidulpabelislam.com](mailto:me@jahidulpabelislam.com) :smirk:.
 
 ## Authors
 
--   [Jahidul Pabel Islam](https://jahidulpabelislam.com/) <me@jahidulpabelislam.com>
+-   [Jahidul Pabel Islam](https://jahidulpabelislam.com/) [<me@jahidulpabelislam.com>](mailto:me@jahidulpabelislam.com)
 
 ## License
 
