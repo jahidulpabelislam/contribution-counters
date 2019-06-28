@@ -33,24 +33,21 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
     The config is an object with the following properties (all available on all counters unless specified):
 
     -   `username`: Your username (string:required)
-    -   `accessToken`: A access token for the user used above (string:required)
+    -   `accessToken`: An access token for the user above (string:required)
 
     The below two are only used if a commit doesn't have a real user attached
 
-    -   `userEmailAddresses`: An array of your email addresses which may be associated with a commit (array)
-    -   `userNames`: An array of your name's which may be associated with a commit (array)
+    -   `userEmailAddresses`: Array of email addresses which may be associated with your commits (array)
+    -   `userNames`: Array of name's which may be associated with your commits (array)
 
-    If you only want to get repos or commits after a particular date (Also can be used to minimise API requests if you know you haven't contributed to any repos before this date)
+    If you only want commits after a particular date (also if you know the date you first contributed this can be used to minimise API requests)
 
-    -   `fromDate`: A datetime string used to only return repos and/or commits after this date (ISO-8601 Date/timestamp (YYYY-MM-DDTHH:mm:ss.sssZ))
+    -   `fromDate`: Datetime string (ISO-8601 Date/timestamp (YYYY-MM-DDTHH:mm:ss.sssZ))
 
-    Only for GitLab
+    To get repos of which you have a min access to
 
-    -   `minRepoAccessLevel`: An enum value used to only get repos with this access level or greater, see [here](https://docs.gitlab.com/ee/api/members.html) (int:default=30)\[10, 20, 30, 40,50]
-
-    Only for Bitbucket
-
-    -   `repoRole`: An enum value used to only get repos with this role level or greater, see [here](https://developer.atlassian.com/bitbucket/api/2/reference/resource/repositories/%7Busername%7D) (string:default=contributor)\[admin, contributor, member, owner]
+    -   `minRepoAccessLevel`: Only for GitLab (int:default=30)\[10, 20, 30, 40,50] (see [here](https://docs.gitlab.com/ee/api/members.html))
+    -   `repoRole`: Only for Bitbucket (string:default=contributor)\[admin, contributor, member, owner] (see [here](https://developer.atlassian.com/bitbucket/api/2/reference/resource/repositories/%7Busername%7D))
 
 3.  Start the counter with the following:
 
