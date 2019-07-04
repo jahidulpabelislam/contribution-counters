@@ -40,9 +40,10 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
     -   `userEmailAddresses`: Array of email addresses which may be associated with your commits (array)
     -   `userNames`: Array of name's which may be associated with your commits (array)
 
-    If you only want commits after a particular date (inclusive) (also if you know the date you first contributed this can be used to minimise API requests)
+    If you only want counts for after and/or before a particular date (inclusive) (or if you know the date you first and/or last contributed this can be used to minimise API requests)
 
     -   `fromDate`: Datetime string (ISO-8601 Date/timestamp (YYYY-MM-DDTHH:mm:ss.sssZ))
+    -   `untilDate`: Datetime string (ISO-8601 Date/timestamp (YYYY-MM-DDTHH:mm:ss.sssZ))
 
     To get repos of which you have a min access to
 
