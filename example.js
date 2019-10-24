@@ -4,7 +4,7 @@
 
 "use strict";
 
-const { Bitbucket, GitHub, GitLab } = require("contribution-counters");
+const { getBitbucketCounters, getGitHubCounters, getGitLabCounters } = require("contribution-counters");
 
 // Luckily as my username and email addresses will be consistent throughout all 3 counters, use the same global variables
 const username = "jahidulpabelislam";
@@ -19,35 +19,33 @@ const userNames = ["Jahidul Pabel Islam", "Jahidul Islam"];
 let totalCommits = 0;
 let totalProjects = 0;
 
-// A generic function as all 3 counters will do the same functions
-const getAPICounter = async function(apiClass, extraConfig = {}) {
+// A generic wrapper function as all 3 counters are called the same way
+const getCounters = async function(counterFunction, extraConfig = {}) {
     const allConfig = {
         username: username,
         userEmailAddresses: userEmailAddresses,
         userNames: userNames,
         ...extraConfig,
     };
-    const api = new apiClass(allConfig);
-    const counters = await api.getCounters();
-    api.log(counters);
+    const counters = await counterFunction(allConfig);
 
     // Here just update the total counts
     totalCommits += counters.commits;
     totalProjects += counters.projects;
 };
 
-const getCounters = async function() {
-    await getAPICounter(Bitbucket, {
+const init = async function() {
+    await getCounters(getBitbucketCounters, {
         accessToken: "hidden",
         fromDate: "2019-06-02",
     });
 
-    await getAPICounter(GitHub, {
+    await getCounters(getGitHubCounters, {
         accessToken: "hidden",
         fromDate: "2019-06-02",
     });
 
-    await getAPICounter(GitLab, {
+    await getCounters(getGitLabCounters, {
         accessToken: "hidden",
         fromDate: "2019-06-02",
     });
@@ -60,4 +58,4 @@ const getCounters = async function() {
     console.log("Total:", counters);
 };
 
-getCounters();
+init();

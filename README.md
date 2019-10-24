@@ -55,9 +55,7 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 3.  Start the counter with the following:
 
     ```javascript
-    const api = new GitHub(config);
-
-    const counters = await api.getCounters();
+    const counters = await getGitHubCounters(config);
     ```
 
 4.  The returned result (`counters`) is a object with two properties:
