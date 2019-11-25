@@ -11,20 +11,20 @@
 
 "use strict";
 
-const Bitbucket = require("./lib/Bitbucket");
-const GitHub = require("./lib/GitHub");
-const GitLab = require("./lib/GitLab");
+const BitbucketCounter = require("./lib/BitbucketCounter");
+const GitHubCounter = require("./lib/GitHubCounter");
+const GitLabCounter = require("./lib/GitLabCounter");
 
 // Wrapper function to only expose main getter function to public use!
-const exposer = function(className) {
+const exposer = function(counterClass) {
     return function(options) {
-        const api = new className(options);
-        return api.getCounters();
+        const counter = new counterClass(options);
+        return counter.get();
     }
 };
 
 module.exports = {
-    getBitbucketCounters: exposer(Bitbucket),
-    getGitHubCounters: exposer(GitHub),
-    getGitLabCounters: exposer(GitLab),
+    getBitbucketCounts: exposer(BitbucketCounter),
+    getGitHubCounts: exposer(GitHubCounter),
+    getGitLabCounts: exposer(GitLabCounter),
 };

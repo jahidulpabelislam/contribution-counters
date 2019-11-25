@@ -4,7 +4,7 @@
 
 "use strict";
 
-const { getBitbucketCounters, getGitHubCounters, getGitLabCounters } = require("contribution-counters");
+const { getBitbucketCounts, getGitHubCounts, getGitLabCounts } = require("contribution-counters");
 
 // Luckily as my username and email addresses will be consistent throughout all 3 counters, use the same global variables
 const username = "jahidulpabelislam";
@@ -15,47 +15,47 @@ const userEmailAddresses = [
 ];
 const userNames = ["Jahidul Pabel Islam", "Jahidul Islam"];
 
-// Keep counts of all commits and projects throughout all 3 counters
+// Keep count of all commits and projects throughout all 3 counters
 let totalCommits = 0;
 let totalProjects = 0;
 
 // A generic wrapper function as all 3 counters are called the same way
-const getCounters = async function(counterFunction, extraConfig = {}) {
+const getCounts = async function(counterFunction, extraConfig = {}) {
     const allConfig = {
         username: username,
         userEmailAddresses: userEmailAddresses,
         userNames: userNames,
         ...extraConfig,
     };
-    const counters = await counterFunction(allConfig);
+    const counts = await counterFunction(allConfig);
 
     // Here just update the total counts
-    totalCommits += counters.commits;
-    totalProjects += counters.projects;
+    totalCommits += counts.commits;
+    totalProjects += counts.projects;
 };
 
-const init = async function() {
-    await getCounters(getBitbucketCounters, {
+const run = async function() {
+    await getCounts(getBitbucketCounts, {
         accessToken: "hidden",
         fromDate: "2019-06-02",
     });
 
-    await getCounters(getGitHubCounters, {
+    await getCounts(getGitHubCounts, {
         accessToken: "hidden",
         fromDate: "2019-06-02",
     });
 
-    await getCounters(getGitLabCounters, {
+    await getCounts(getGitLabCounts, {
         accessToken: "hidden",
         fromDate: "2019-06-02",
     });
 
-    const counters = {
+    const counts = {
         projects: totalProjects,
         commits: totalCommits,
     };
 
-    console.log("Total:", counters);
+    console.log("Total:", counts);
 };
 
-init();
+run();

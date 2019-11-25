@@ -26,7 +26,7 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 
 1.  Import the necessary counter like below:
 
-    `const { GitHub } = require("contribution-counters");`
+    `const { getGitHubCounts } = require("contribution-counters");`
 
 2.  Set up the configuration for the selected counter
 
@@ -48,22 +48,22 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 
     To get repos of which you have a min access to
 
-    -   `minRepoAccessLevel`: Only for GitLab (int:default=30)\[10, 20, 30, 40,50] (see [here](https://docs.gitlab.com/ee/api/members.html))
+    -   `minRepoAccessLevel`: Only for GitLab (int:default=30)\[10, 20, 30, 40, 50] (see [here](https://docs.gitlab.com/ee/api/members.html))
     -   `minRepoRole`: Only for Bitbucket & GitHub (string:default=contributor)\[admin, contributor, member, owner] (see [here](https://developer.atlassian.com/bitbucket/api/2/reference/resource/repositories/%7Busername%7D))
     -   `minRepoRole`: Only for GitHub (comma separated string:default=owner,collaborator,organization_member)\[owner, collaborator, organization_member] (see [here](https://developer.github.com/v3/repos/#parameters))
 
 3.  Start the counter with the following:
 
     ```javascript
-    const counters = await getGitHubCounters(config);
+    const counts = await getGitHubCounts(config);
     ```
 
-4.  The returned result (`counters`) is a object with two properties:
+4.  The returned result (`counts`) is a object with two properties:
 
     -   `commits` is your total commits
     -   `projects` is the number of projects you've contributed to
 
-`GitHub` in the above example can be replaced with `Bitbucket` or `GitLab`.
+`getGitHubCounts` in the above example can be replaced with `getBitbucketCounts` or `getGitLabCounts`.
 
 ### Creating access tokens
 
