@@ -78,8 +78,8 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 In version 2, the only braking change is that only functions can be imported/required, instead of Counter classes.
 
 To upgrade you will need to import/require the 3 new functions: `getBitbucketCounts`, `getGitHubCounts` &amp; `getGitLabCounts` instead of `Bitbucket`, `GitHub` &amp; `GitLab`.
-Where before you created a instance of a class (e.g. `GitHub`) and passed in a object of options, then called a function (`getCounters`) to get the counts.
-Now the new functions will do both in one. So just call the new function and pass in the existing options object as the only parameter and then your counts will be returned.
+Where before you created a instance of a class (e.g. `GitHub`) and passed in a object of config, then called a function (`getCounters`) to get the counts.
+Now the new functions will do both in one. So just call the new function and pass in the existing config object as the only parameter and then your counts will be returned.
 
 ## Support
 

@@ -17,8 +17,8 @@ const GitLabCounter = require("./lib/GitLabCounter");
 
 // Wrapper function to only expose main getter function to public use!
 const exposer = function(counterClass) {
-    return function(options) {
-        const counter = new counterClass(options);
+    return function(config) {
+        const counter = new counterClass(config);
         return counter.get();
     }
 };
