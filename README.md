@@ -71,6 +71,16 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 -   [GitLab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html#creating-a-personal-access-token)
 -   [Bitbucket](https://confluence.atlassian.com/bitbucketserver/personal-access-tokens-939515499.html)
 
+## Upgrading
+
+### v1 to v2
+
+In version 2, the only braking change is that only functions can be imported/required, instead of Counter classes.
+
+To upgrade you will need to import/require the 3 new functions: `getBitbucketCounts`, `getGitHubCounts` &amp; `getGitLabCounts` instead of `Bitbucket`, `GitHub` &amp; `GitLab`.
+Where before you created a instance of a class (e.g. `GitHub`) and passed in a object of options, then called a function (`getCounters`) to get the counts.
+Now the new functions will do both in one. So just call the new function and pass in the existing options object as the only parameter and then your counts will be returned.
+
 ## Support
 
 If you found this module interesting or useful please do spread the word of this module: share on your social's, star on github, etc.
