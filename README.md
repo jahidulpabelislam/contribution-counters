@@ -26,7 +26,7 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 
 1.  Import the necessary counter like below:
 
-    `const { getGitHubCounts } = require("contribution-counters");`
+    `const { getGitHubContributions } = require("contribution-counters");`
 
 2.  Set up the configuration for the selected counter
 
@@ -41,7 +41,7 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
     -   `userEmailAddresses`: Array of email addresses which may be associated with your commits (array)
     -   `userNames`: Array of name's which may be associated with your commits (array)
 
-    If you only want counts for after and/or before a particular date (inclusive) (or if you know the date you first and/or last contributed this can be used to minimise API requests)
+    If you only want contributions for after and/or before a particular date (inclusive) (or if you know the date you first and/or last contributed this can be used to minimise API requests)
 
     -   `fromDate`: Datetime string (ISO-8601 Date/timestamp (YYYY-MM-DDTHH:mm:ss.sssZ))
     -   `untilDate`: Datetime string (ISO-8601 Date/timestamp (YYYY-MM-DDTHH:mm:ss.sssZ))
@@ -59,15 +59,15 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 3.  Start the counter with the following:
 
     ```javascript
-    const counts = await getGitHubCounts(config);
+    const contributions = await getGitHubContributions(config);
     ```
 
-4.  The returned result (`counts`) is a object with two properties:
+4.  The returned result (`contributions`) is a object with two properties:
 
     -   `commits` is your total commits
     -   `projects` is the number of projects you've contributed to
 
-`getGitHubCounts` in the above example can be replaced with `getBitbucketCounts` or `getGitLabCounts`.
+`getGitHubContributions` in the above example can be replaced with `getBitBucketContributions` or `getGitLabContributions`.
 
 ### Creating access tokens
 
@@ -81,7 +81,7 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 
 In version 2, the only braking change is that only functions can be imported/required, instead of Counter classes.
 
-To upgrade you will need to import/require the 3 new functions: `getBitbucketCounts`, `getGitHubCounts` &amp; `getGitLabCounts` instead of `Bitbucket`, `GitHub` &amp; `GitLab`.
+To upgrade you will need to import/require the 3 new functions: `getBitBucketContributions`, `getGitHubContributions` &amp; `getGitLabContributions` instead of `Bitbucket`, `GitHub` &amp; `GitLab`.
 Where before you created a instance of a class (e.g. `GitHub`) and passed in a object of config, then called a function (`getCounters`) to get the counts.
 Now the new functions will do both in one. So just call the new function and pass in the existing config object as the only parameter and then your counts will be returned.
 

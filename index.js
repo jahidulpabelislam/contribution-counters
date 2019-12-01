@@ -1,5 +1,5 @@
 ;/**
- * A Node.js module to get commits and repos counts from Bitbucket, GitHub & GitLab
+ * A Node.js module to get commits and repos counts/data from Bitbucket, GitHub & GitLab
  *
  * The main file where the all the public functions are exported
  *
@@ -23,8 +23,15 @@ const exposer = function(counterClass) {
     }
 };
 
+const getBitBucketContributions = exposer(BitbucketCounter);
+const getGitHubContributions = exposer(GitHubCounter);
+const getGitLabContributions = exposer(GitLabCounter);
+
 module.exports = {
-    getBitbucketCounts: exposer(BitbucketCounter),
-    getGitHubCounts: exposer(GitHubCounter),
-    getGitLabCounts: exposer(GitLabCounter),
+    getBitbucketCounts: getBitBucketContributions,
+    getBitBucketContributions: getBitBucketContributions,
+    getGitHubCounts: getGitHubContributions,
+    getGitHubContributions: getGitHubContributions,
+    getGitLabCounts: getGitLabContributions,
+    getGitLabContributions: getGitLabContributions,
 };
