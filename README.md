@@ -49,7 +49,7 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
     To get repos of which you have a min access to
 
     -   `minRepoAccessLevel`: Only for GitLab (int:default=30)\[10, 20, 30, 40, 50] (see [here](https://docs.gitlab.com/ee/api/members.html))
-    -   `minRepoRole`: Only for Bitbucket & GitHub (string:default=contributor)\[admin, contributor, member, owner] (see [here](https://developer.atlassian.com/bitbucket/api/2/reference/resource/repositories/%7Busername%7D))
+    -   `minRepoRole`: Only for Bitbucket (string:default=contributor)\[admin, contributor, member, owner] (see [here](https://developer.atlassian.com/bitbucket/api/2/reference/resource/repositories/%7Busername%7D))
     -   `minRepoRole`: Only for GitHub (comma separated string:default=owner,collaborator,organization_member)\[owner, collaborator, organization_member] (see [here](https://developer.github.com/v3/repos/#parameters))
 
     If you have a self hosted GitLab, you will need to use `url` option
