@@ -9,8 +9,6 @@
  * @license: GPL-3.0
  */
 
-"use strict";
-
 const BitbucketCounter = require("./lib/BitbucketCounter");
 const GitHubCounter = require("./lib/GitHubCounter");
 const GitLabCounter = require("./lib/GitLabCounter");
@@ -20,7 +18,7 @@ const exposer = function(counterClass) {
     return function(config) {
         const counter = new counterClass(config);
         return counter.get();
-    }
+    };
 };
 
 module.exports = {
