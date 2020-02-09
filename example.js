@@ -2,9 +2,11 @@
  * Just an example of all the counters in action.
  */
 
-"use strict";
-
-const { getBitBucketContributions, getGitHubContributions, getGitLabContributions } = require("contribution-counters");
+const {
+    getBitBucketContributions,
+    getGitHubContributions,
+    getGitLabContributions,
+} = require("contribution-counters");
 
 // Luckily as my username and email addresses will be consistent throughout all 3 counters, use the same global variables
 const username = "jahidulpabelislam";
