@@ -39,17 +39,17 @@ const getCounts = async function(counterFunction, extraConfig = {}) {
 const run = async function() {
     await getCounts(getBitbucketCounts, {
         accessToken: "hidden",
-        fromDate: "2019-06-02",
+        fromDate: "2019-06-02T00:00:00Z",
     });
 
     await getCounts(getGitHubCounts, {
         accessToken: "hidden",
-        fromDate: "2019-06-02",
+        fromDate: "2019-06-02T00:00:00Z",
     });
 
     await getCounts(getGitLabCounts, {
         accessToken: "hidden",
-        fromDate: "2019-06-02",
+        fromDate: "2019-06-02T00:00:00Z",
     });
 
     const counts = {
