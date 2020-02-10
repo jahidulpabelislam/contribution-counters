@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Different result formats
 
+## [2.1.4] - 2020-02-10
+
+### Updated
+
+-   Updated internal logic/handling around dates (from & until dates)
+
 ## [2.1.3] - 2020-02-09
 
 ### Added
@@ -151,8 +157,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 First release! :fire:
 
-[unreleased]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.3...HEAD
+[unreleased]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.4...HEAD
 
+[2.1.4]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.3...v2.1.4
 [2.1.3]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.2...v2.1.3
 [2.1.2]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.1...v2.1.2
 [2.1.1]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.0...v2.1.1
