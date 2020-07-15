@@ -36,7 +36,7 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
     -   `accessToken`: An access token for the user above (string:required)
     -   `minCommits`: The minimum number of commits a repo needs to count as a contribution (int:default=1)
 
-    The below two are only used if a commit doesn't have a real user attached
+    The below two are only used if a commit doesn't have a real user attached (At least one is required for Bitbucket & GitLab & both optional for GitHub BUT advised to use both for all)
 
     -   `userEmailAddresses`: Array of email addresses which may be associated with your commits (array)
     -   `userNames`: Array of name's which may be associated with your commits (array)
