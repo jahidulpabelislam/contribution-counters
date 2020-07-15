@@ -1,6 +1,6 @@
 {
     "name": "contribution-counters",
-    "version": "2.1.4",
+    "version": "2.1.5",
     "description": "Repos & commits counters for Bitbucket, GitHub & GitLab",
     "keywords": [
         "counter",
