@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Different result formats
 
+## [2.1.6] - 2020-07-16
+
+### Removed
+
+-   Removed extra (dev) files from package
+
 ## [2.1.5] - 2020-07-15
 
 ### Updated
@@ -163,8 +169,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 First release! :fire:
 
-[unreleased]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.5...HEAD
+[unreleased]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.6...HEAD
 
+[2.1.6]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.5...v2.1.6
 [2.1.5]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.4...v2.1.5
 [2.1.4]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.3...v2.1.4
 [2.1.3]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.2...v2.1.3
