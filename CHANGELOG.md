@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Different result formats
 
+## [2.2.0] - 2020-07-27
+
+### Updated
+
+-   Made user names & email addresses optional for GitHub and filter by username in API calls for commits if no values
+
 ## [2.1.6] - 2020-07-16
 
 ### Removed
@@ -169,8 +175,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 First release! :fire:
 
-[unreleased]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.6...HEAD
+[unreleased]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.2.0...HEAD
 
+[2.2.0]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.6...v2.2.0
 [2.1.6]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.5...v2.1.6
 [2.1.5]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.4...v2.1.5
 [2.1.4]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.3...v2.1.4
