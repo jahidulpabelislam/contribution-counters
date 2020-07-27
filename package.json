@@ -1,6 +1,6 @@
 {
     "name": "contribution-counters",
-    "version": "2.1.4",
+    "version": "2.2.0",
     "description": "Repos & commits counters for Bitbucket, GitHub & GitLab",
     "keywords": [
         "counter",
@@ -26,6 +26,9 @@
     "directories": {
         "lib": "lib"
     },
+    "files": [
+        "/lib"
+    ],
     "dependencies": {
         "axios": "^0.19.2"
     },
