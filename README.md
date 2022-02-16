@@ -6,7 +6,7 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/f0650e656bae4ca1ba9e9c2809b77991)](https://www.codacy.com/gh/jahidulpabelislam/contribution-counters/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jahidulpabelislam/contribution-counters&amp;utm_campaign=Badge_Grade)
 ![npm](https://img.shields.io/npm/v/contribution-counters.svg)
 ![npm](https://img.shields.io/npm/dm/contribution-counters.svg)
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/jahidulpabelislam/contribution-counters/master.svg?label=last%20activity)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/jahidulpabelislam/contribution-counters/2.x.svg?label=last%20activity)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/contribution-counters.svg)
 ![NPM](https://img.shields.io/npm/l/contribution-counters.svg)
 
