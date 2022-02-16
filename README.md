@@ -3,7 +3,7 @@
 [![NPM](https://nodei.co/npm/contribution-counters.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.org/package/contribution-counters)
 
 [![CodeFactor](https://www.codefactor.io/repository/github/jahidulpabelislam/contribution-counters/badge?style=flat-square)](https://www.codefactor.io/repository/github/jahidulpabelislam/contribution-counters)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b6f7e38aec0c4a8999cd763f73e55a45)](https://app.codacy.com/app/jahidulpabelislam/counters.js?utm_source=github.com&utm_medium=referral&utm_content=jahidulpabelislam/counters.js&utm_campaign=Badge_Grade_Settings)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/f0650e656bae4ca1ba9e9c2809b77991)](https://www.codacy.com/gh/jahidulpabelislam/contribution-counters/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jahidulpabelislam/contribution-counters&amp;utm_campaign=Badge_Grade)
 ![npm](https://img.shields.io/npm/v/contribution-counters.svg)
 ![npm](https://img.shields.io/npm/dm/contribution-counters.svg)
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/jahidulpabelislam/contribution-counters/master.svg?label=last%20activity)
