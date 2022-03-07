@@ -67,7 +67,7 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 
     - `commits` is your total number of commits
     - `projects` is the number of projects you've contributed to
-    - `pullRequests` is the number of pull/merge requests you've authored
+    - `pullRequests` is the number of pull/merge requests you've authored (if requested)
 
 `getGitHubCounts` in the above example can be replaced with `getBitbucketCounts` or `getGitLabCounts`.
 
