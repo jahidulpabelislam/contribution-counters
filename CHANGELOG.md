@@ -15,7 +15,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Added ability to get pull/merge requests contribution count
 
-
 ## [2.3.0] - 2022-02-18
 
 ### Updated
