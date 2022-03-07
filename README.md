@@ -13,7 +13,7 @@
 Have you ever wanted to find out how many repos/projects you've contributed to and with how many commits?
 Well, now you can easily do so with this simple to use module!
 
-This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is achieved via each of their API's and access tokens.
+This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is achieved via each of their APIs and access tokens.
 
 ## Instructions
 
@@ -32,9 +32,10 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 
     The config is an object with the following properties (all available on all counters unless specified):
 
-    -   `username`: Your username (string:required)
-    -   `accessToken`: An access token for the user above (string:required)
-    -   `minCommits`: The minimum number of commits a repo needs to count as a contribution (int:default=1)
+    - `username`: Your username (string:required)
+    - `accessToken`: An access token for the user above (string:required)
+    - `minCommits`: The minimum number of commits a repo needs to count as a contribution (int:default=1)
+    - `includePullRequests`: Whether to include count of pull/merge requests contributions (bool:default=false)
 
     The below two are only used if a commit doesn't have a real user attached (At least one is required for Bitbucket & GitLab & both optional for GitHub BUT advised to use both for all)
 
@@ -46,13 +47,13 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
     -   `fromDate`: Datetime string (ISO-8601 Date/timestamp (YYYY-MM-DDTHH:mm:ss.sssZ))
     -   `untilDate`: Datetime string (ISO-8601 Date/timestamp (YYYY-MM-DDTHH:mm:ss.sssZ))
 
-    To get repos of which you have a min access to
+    To get repos of which you have a minimum access to
 
     -   `minRepoAccessLevel`: Only for GitLab (int:default=30)\[10, 20, 30, 40, 50] (see [here](https://docs.gitlab.com/ee/api/members.html))
     -   `minRepoRole`: Only for Bitbucket (string:default=contributor)\[admin, contributor, member, owner] (see [here](https://developer.atlassian.com/bitbucket/api/2/reference/resource/repositories/%7Busername%7D))
     -   `minRepoRole`: Only for GitHub (comma separated string:default=owner,collaborator,organization_member)\[owner, collaborator, organization_member] (see [here](https://developer.github.com/v3/repos/#parameters))
 
-    If you have a self hosted GitLab, you will need to use `url` option
+    If you have a selfhosted GitLab, you will need to use `url` option
     
     -   `url`: The URL where your GitLab is located at (for example `https://gitlab.jahidulpabelislam.com/` or `https://jahidulpabelislam.com/gitlab/`)
 
@@ -62,10 +63,11 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
     const counts = await getGitHubCounts(config);
     ```
 
-4.  The returned result (`counts`) is a object with two properties:
+4.  The returned result (`counts`) is an object with two or three properties:
 
-    -   `commits` is your total commits
-    -   `projects` is the number of projects you've contributed to
+    - `commits` is your total number of commits
+    - `projects` is the number of projects you've contributed to
+    - `pullRequests` is the number of pull/merge requests you've authored
 
 `getGitHubCounts` in the above example can be replaced with `getBitbucketCounts` or `getGitLabCounts`.
 
@@ -82,14 +84,14 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 In version 2, the only braking change is that only functions can be imported/required, instead of Counter classes.
 
 To upgrade you will need to import/require the 3 new functions: `getBitbucketCounts`, `getGitHubCounts` &amp; `getGitLabCounts` instead of `Bitbucket`, `GitHub` &amp; `GitLab`.
-Where before you created a instance of a class (e.g. `GitHub`) and passed in a object of config, then called a function (`getCounters`) to get the counts.
+Where before you created an instance of a class (e.g. `GitHub`) and passed in a object of config, then called a function (`getCounters`) to get the counts.
 Now the new functions will do both in one. So just call the new function and pass in the existing config object as the only parameter and then your counts will be returned.
 
 ## Support
 
 If you found this module interesting or useful please do spread the word of this module: share on your social's, star on github, etc.
 
-If you find any issues or have any feature requests, you can open a [issue](https://github.com/jahidulpabelislam/contribution-counters/issues) or can email [me @ jahidulpabelislam.com](mailto:me@jahidulpabelislam.com) :smirk:.
+If you find any issues or have any feature requests, you can open an [issue](https://github.com/jahidulpabelislam/contribution-counters/issues) or can email [me @ jahidulpabelislam.com](mailto:me@jahidulpabelislam.com) :smirk:.
 
 ## Authors
 
