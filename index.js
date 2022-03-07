@@ -1,4 +1,4 @@
-;/**
+/**
  * A Node.js module to get commits and repos counts from Bitbucket, GitHub & GitLab
  *
  * The main file where the all the public functions are exported
