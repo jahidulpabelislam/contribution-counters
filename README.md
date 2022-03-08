@@ -59,23 +59,23 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 
 3.  Start the counter with the following:
 
-   ```javascript
-   const counts = await getGitHubCounts(config);
-   ```
+    ```javascript
+    const counts = await getGitHubCounts(config);
+    ```
 
 4.  The returned result (`counts`) is an object with two or three properties:
 
-    -  `commits` is your total number of commits
-    -  `projects` is the number of projects you've contributed to
-    -  `pullRequests` is the number of pull/merge requests you've authored (if requested)
+    -    `commits` is your total number of commits
+    -    `projects` is the number of projects you've contributed to
+    -    `pullRequests` is the number of pull/merge requests you've authored (if requested)
 
 `getGitHubCounts` in the above example can be replaced with `getBitbucketCounts` or `getGitLabCounts`.
 
 ### Creating access tokens
 
--  [GitHub](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line)
--  [GitLab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html#creating-a-personal-access-token)
--  [Bitbucket](https://confluence.atlassian.com/bitbucketserver/personal-access-tokens-939515499.html)
+-    [GitHub](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line)
+-    [GitLab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html#creating-a-personal-access-token)
+-    [Bitbucket](https://confluence.atlassian.com/bitbucketserver/personal-access-tokens-939515499.html)
 
 ## Upgrading
 
@@ -95,7 +95,7 @@ If you find any issues or have any feature requests, you can open an [issue](htt
 
 ## Authors
 
--  [Jahidul Pabel Islam](https://jahidulpabelislam.com/) [<me@jahidulpabelislam.com>](mailto:me@jahidulpabelislam.com)
+-    [Jahidul Pabel Islam](https://jahidulpabelislam.com/) [<me@jahidulpabelislam.com>](mailto:me@jahidulpabelislam.com)
 
 ## License
 
