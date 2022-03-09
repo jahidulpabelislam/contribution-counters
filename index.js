@@ -20,15 +20,8 @@ const exposer = function(counterClass) {
     };
 };
 
-const getBitBucketContributions = exposer(BitbucketCounter);
-const getGitHubContributions = exposer(GitHubCounter);
-const getGitLabContributions = exposer(GitLabCounter);
-
 module.exports = {
-    getBitbucketCounts: getBitBucketContributions,
-    getBitBucketContributions: getBitBucketContributions,
-    getGitHubCounts: getGitHubContributions,
-    getGitHubContributions: getGitHubContributions,
-    getGitLabCounts: getGitLabContributions,
-    getGitLabContributions: getGitLabContributions,
+    getBitBucketContributions: exposer(BitbucketCounter),
+    getGitHubContributions: exposer(GitHubCounter),
+    getGitLabContributions: exposer(GitLabCounter),
 };
