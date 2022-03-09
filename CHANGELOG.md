@@ -9,6 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Different result formats
 
+## [2.4.0] - 2022-03-07
+
+### Added
+
+-   Added ability to get pull/merge requests contribution count
+
+## [2.3.0] - 2022-02-18
+
+### Updated
+
+-   Update how commits are counted up for GitHub - to reduce the number of requests to the API
+
 ## [2.2.0] - 2020-07-27
 
 ### Updated
@@ -175,8 +187,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 First release! :fire:
 
-[unreleased]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.2.0...HEAD
-
+[unreleased]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.4.0...HEAD
+[2.4.0]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.3.0...v2.4.0
+[2.3.0]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.2.0...v2.3.0
 [2.2.0]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.6...v2.2.0
 [2.1.6]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.5...v2.1.6
 [2.1.5]: https://github.com/jahidulpabelislam/contribution-counters/compare/v2.1.4...v2.1.5

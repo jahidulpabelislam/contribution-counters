@@ -1,11 +1,10 @@
-;/**
+/**
  * A Node.js module to get commits and repos counts/data from Bitbucket, GitHub & GitLab
  *
  * The main file where the all the public functions are exported
  *
- * @version 2.0.1
  * @author Jahidul Pabel Islam <me@jahidulpabelislam.com>
- * @copyright (c) 2010 - 2019 JPI
+ * @copyright (c) 2010 - 2022 JPI
  * @license: GPL-3.0
  */
 
