@@ -26,7 +26,7 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 
 1.  Import the necessary counter like below:
 
-   `const { getGitHubCounts } = require("contribution-counters");`
+   `const { getGitHubContributions } = require("contribution-counters");`
 
 2.  Set up the configuration for the selected counter
 
@@ -42,7 +42,7 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
     -  `userEmailAddresses`: Array of email addresses which may be associated with your commits (array)
     -  `userNames`: Array of name's which may be associated with your commits (array)
 
-   If you only want counts for after and/or before a particular date (inclusive) (or if you know the date you first and/or last contributed this can be used to minimise API requests)
+   If you only want contributions for after and/or before a particular date (inclusive) (or if you know the date you first and/or last contributed this can be used to minimise API requests)
 
     -  `fromDate`: Datetime string (ISO-8601 Date/timestamp (YYYY-MM-DDTHH:mm:ss.sssZ))
     -  `untilDate`: Datetime string (ISO-8601 Date/timestamp (YYYY-MM-DDTHH:mm:ss.sssZ))
@@ -60,16 +60,16 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
 3.  Start the counter with the following:
 
         ```javascript
-        const counts = await getGitHubCounts(config);
+        const contributions = await getGitHubContributions(config);
         ```
 
-4.  The returned result (`counts`) is an object with two or three properties:
+4.  The returned result (`contributions`) is an object with two or three properties:
 
       - `commits` is your total number of commits
       - `projects` is the number of projects you've contributed to
       - `pullRequests` is the number of pull/merge requests you've authored (if requested)
 
-`getGitHubCounts` in the above example can be replaced with `getBitbucketCounts` or `getGitLabCounts`.
+`getGitHubContributions` in the above example can be replaced with `getBitBucketContributions` or `getGitLabContributions`.
 
 ### Creating access tokens
 
