@@ -52,7 +52,7 @@ This contribution counter is for 3 VCSs: GitHub, Bitbucket &amp; GitLab and is a
     - `minRepoRole`: Only for Bitbucket (string:default=contributor)\[admin, contributor, member, owner] (see [here](https://developer.atlassian.com/bitbucket/api/2/reference/resource/repositories/%7Busername%7D))
     - `minRepoRole`: Only for GitHub (comma separated string:default=owner,collaborator,organization_member)\[owner, collaborator, organization_member] (see [here](https://developer.github.com/v3/repos/#parameters))
 
-   If you have a self hosted GitLab, you will need to use `url` option
+   If you have a self-hosted GitLab, you will need to use the `url` option
 
     - `url`: The URL where your GitLab is located at (for example `https://gitlab.jahidulpabelislam.com/` or `https://jahidulpabelislam.com/gitlab/`)
 
@@ -92,7 +92,7 @@ Now the new functions will do both in one. So just call the new function and pas
 
 If you found this module interesting or useful please do spread the word of this module: share on your social's, star on GitHub, etc.
 
-If you find any issues or have any feature requests, you can open an [issue](https://github.com/jahidulpabelislam/contribution-counters/issues) or can email [me @ jahidulpabelislam.com](mailto:me@jahidulpabelislam.com) :smirk:.
+If you find any issues or have any feature requests, you can open an [issue](https://github.com/jahidulpabelislam/contribution-counters/issues) or email [me @ jahidulpabelislam.com](mailto:me@jahidulpabelislam.com) :smirk:.
 
 ## Authors
 
